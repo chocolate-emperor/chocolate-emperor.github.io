@@ -351,7 +351,21 @@
                 <span>cookie session token</span>
         </a>
         <div class="abstract-content">
-            
+            会话跟踪技术web开发中绝大多数是短链接，从request开始，到response结束。
+证明我是我的问题，服务器需要识别请求是否来自同一个浏览器
+cookie以键值对形式存在于浏览器（客户端）上的一种会话技术
+有过期时间
+不可以跨域名，默认不支持中文
+安全性差，可以被用户篡改
+执行的流程：
+session服务端会话技术，数据存储在服务端
+支持过期
+本来存在内存，在django种被持久化到了数据库中
+数据安全，使用base64
+依赖于cookie（存了sessionid）
+token自定义的session，数据存储在服务器中
+可移植扩展，主要用移动端和专用客户端
+
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
